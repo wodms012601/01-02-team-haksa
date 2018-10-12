@@ -113,13 +113,15 @@
 						, data: {semesterCode:semesterCode, departmentCode:departmentCode, gradeCode:gradeCode, classesCode:classesCode}
 						, success: function(data){
 							console.log("success");
-			                /* $(data).each(function(index,item){
-			                	$('#scheduleTable > tbody > tr').before('<td>'+item.id+'</td>');
-			                	$('#scheduleTable > tbody > tr').before('<td>'+item.pw+'</td>');
-			                	$('#scheduleTable > tbody > tr').before('<td>'+item.name+'</td>');
-			                	$('#scheduleTable > tbody > tr').before('<td>'+item.age+'</td>');
-			                	$('#scheduleTable > tbody > tr').before('<td>'+item.gender+'</td>');
-			                }); */
+			                $(data).each(function(index,item){
+			                	$('#scheduleTable > tbody > tr').before('<tr>');
+			                	$('#scheduleTable > tbody > tr').before('<td>'+item.subjectName+'</td>');
+			                	$('#scheduleTable > tbody > tr').before('<td>'+item.buildingName+'</td>');
+			                	$('#scheduleTable > tbody > tr').before('<td>'+item.roomFloor+'</td>');
+			                	$('#scheduleTable > tbody > tr').before('<td>'+item.roomName+'</td>');
+			                	$('#scheduleTable > tbody > tr').before('<td>'+item.humanName+'</td>');
+			                	$('#scheduleTable > tbody > tr').before('/<tr>');
+			                });
 						}
 					})
 				};
@@ -151,7 +153,6 @@
 					<select name="classBox" id="classCode">
 						<option value="선택">선택</option>
 					</select>&emsp;
-				
 					<button type="button" id="click">조회</button>
 		
 		<form action="${pageContext.request.contextPath}/scheduleAdd" method="post">

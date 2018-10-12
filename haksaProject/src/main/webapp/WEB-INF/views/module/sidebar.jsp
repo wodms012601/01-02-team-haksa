@@ -65,6 +65,14 @@
 		</li>
 		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+				<i class="fas fa-fw fa-folder"></i> <span>시간표 관리</span>
+			</a>
+			<div class="dropdown-menu" aria-labelledby="pagesDropdown">
+				<a class="dropdown-item" href="/schoolregister/schedule">시간표 입력</a> 
+			</div>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
 				<i class="fas fa-fw fa-folder"></i> <span>졸업코드 관리</span>
 			</a>
 			<div class="dropdown-menu" aria-labelledby="pagesDropdown">
